@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-div">
+        <form class="search-form" method="POST" action="/" autocomplete="off">
+          <input
+            class="location-input"
+            type="text"
+            name="location-input"
+            placeholder="Chicago"
+          />
+          <button>
+            <img
+              class="search-icon"
+              src="images/search.png"
+              alt="search icon"
+            />
+          </button>
+        </form>
+      </div>
+      <div class="invalid-location">Invalid Location</div>
+      <div class="display-div">
+        <div class="display-img">
+          <img
+            class="weather-img"
+            src="images/clear.png"
+            alt="current weather image"
+          />
+        </div>
+
+        <div class="display-temp">
+          <h1>70°F</h1>
+        </div>
+
+        <div class="display-location">
+          <h2>Chicago</h2>
+        </div>
+
+        <div class="weather-stats">
+          <img
+            class="humidity-icon bottom-imgs"
+            src="images/humidity.png"
+            alt=""
+          />
+          <div class="humidity-div">
+            <p class="humidity-percent">78%</p>
+            <p class="title">Humidity</p>
+          </div>
+
+          <img
+            class="high-today-icon bottom-imgs"
+            src="images/high.png"
+            alt=""
+          />
+          <div>
+            <p class="high-today">85°F</p>
+            <p class="title">Today's High</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
